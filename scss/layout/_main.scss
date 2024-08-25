@@ -1,0 +1,23 @@
+@import "../base/vars";
+@import "../components/mixins";
+
+.main-container {
+    @include body-layout($main-layout-type, $main-home-layout-map);
+
+    /* Cards first */
+    .main-section-card-first {
+        @include body-layout($main-layout-card-first-type, $main-layout-card-first-map);
+    }
+    
+    /* Cards second */
+    .main-section-card-second {
+        @include body-layout($main-layout-card-second-type, $main-layout-card-second-map);
+    }
+
+}
+
+@media (max-width: $default-with-limit-five) { 
+    .main-container { 
+        @include body-layout($mobile-main-layout-type, $mobile-main-home-layout-map)
+    }
+}

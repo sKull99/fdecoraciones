@@ -1,0 +1,16 @@
+@import "../base/vars";
+@import "../components/mixins";
+
+
+.header-content {
+    @include body-layout($header-layout-type, $header-layout-map); 
+}
+
+@media (max-width: $default-with-limit-four) { 
+    .header-container {
+        height: $mobile-header-content;
+        .header-content {
+            @include body-layout($mobile-header-layout-type, $mobile-body-layout-map);
+          }
+    }
+}

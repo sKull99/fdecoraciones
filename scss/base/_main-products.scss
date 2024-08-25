@@ -1,0 +1,68 @@
+@import "./vars";
+@import "../components/mixins";
+
+
+.main-products-container {
+    grid-area: main;
+    margin-top: 20px;
+    margin-bottom: 70px;
+
+    .main-sections-banner-first {
+        display: flex;
+        justify-content: center;
+        .sections-banner-first {
+            width: 83%;
+            height: 300px;
+
+            img {
+                @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+            }
+        }
+    }
+    .main-section-products {
+        display: flex;
+        justify-content: center;
+        .section-product-container {
+            width: 90%;
+            .card-product {
+                width: 340px;
+                height: 450px;
+                border-radius: 3px;
+                box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+                transition: all 400ms ease;
+                .gallery-product-link {
+                    text-decoration: none;
+                    .card-product-img {
+                        margin-top: 15px;
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+                        }
+                    }
+                    .card-product-title {
+                        margin-top: 15px;
+                        width: 300px;
+                        span {
+                            color: black;
+                            @include font-setting($default-product-font-weight, $default-product-font-size)
+                        }
+                    }
+                }
+                .card-product-precie {
+                    margin-bottom: 15px;
+                    width: 300px;
+
+                    span {
+                        @include font-setting($default-product-pricing-font-weight, $default-product-pricingfont-size)
+                    }
+                }
+            }
+            .card-product:hover {
+                box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+                transform: translateY(-2%);
+            }
+        }
+    }
+}

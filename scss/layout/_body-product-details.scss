@@ -1,0 +1,14 @@
+@import "../base/vars";
+@import "../components/mixins";
+
+
+.body-product-details {
+    @include body-layout($body-layout-type, $body-layout-map);  
+  }
+  
+
+  @media (max-width: $default-with-limit-four) { 
+    .body-product-details {
+      display: block;
+    }
+  }

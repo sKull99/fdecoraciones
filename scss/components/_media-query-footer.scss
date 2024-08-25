@@ -1,0 +1,48 @@
+@import "../base/vars";
+
+
+
+@media (max-width: $default-with-limit-five) {
+    .footer-container {
+        ._footer-container {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: $default-with-limit-six) {
+    .footer-container {
+        ._footer-container {
+            margin-bottom: 20px;
+            .footer-content-sections {
+                gap: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .footer-content-section-card {
+                    .footer-section-card-title {}
+                    .footer-section-card-links {
+                        height: auto;
+                        width: auto;
+                        ul {
+                            margin: 0;
+                            padding: 0;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                    }
+                    .footer-section-card-images {
+                        width: auto;
+                        height: auto;
+                        .footer-section-card-img {
+                            display: flex;
+                            flex-direction: row;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

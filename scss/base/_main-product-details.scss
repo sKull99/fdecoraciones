@@ -1,0 +1,92 @@
+@import "./vars";
+@import "../components/mixins";
+
+.main-product-details-container {
+    grid-area: main;
+    .section-carousel-events {
+        background-color: #EBEBEB;
+    }
+
+    .section-product-details {
+        margin-top: 20px;
+        .section-product-details-container {
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: 0.3fr 1fr 1.3fr;
+
+            .product-details-box-img-small {}
+
+            .product-details-box-img-medium {
+                ._product-details-box-img-medium {}
+            }
+
+            .product-defails-box {
+                .box-title {
+                    h2 {
+                        margin-bottom: 0;
+                        @include font-setting(400, 1.5em);
+                    }
+                }
+
+                .box-price {
+                    span {
+                        @include font-setting($default-product-pricing-font-weight, $default-product-pricingfont-size)
+                    }
+                }
+
+                .box-size {
+                    span {
+                        @include font-setting($default-product-pricing-font-weight, $default-product-pricingfont-size)
+                    }
+                }
+
+                .box-details {
+                    span {
+                        @include font-setting($default-product-pricing-font-weight, $default-product-pricingfont-size)
+                    }
+                    ul {
+                        list-style: none;
+                        @include font-setting(350, 1em);
+                    }
+                }
+
+                .box-about {
+                    span {
+                        @include font-setting($default-product-pricing-font-weight, $default-product-pricingfont-size)
+                    }
+                }
+            }
+
+        }
+    }
+
+    .section-carousel-selector {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            height: 46px;
+            width: 46px;
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 46px;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: #EBEBEB;
+        }
+        .box-carrusel {
+            padding: 0 10px;
+            border: 1px solid;
+            max-width: 762px;
+            white-space: nowrap;
+            cursor: pointer;
+            overflow: hidden;
+            img {
+                height: 130px;
+                object-fit: cover;
+            }
+        }
+
+    }
+}

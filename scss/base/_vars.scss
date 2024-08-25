@@ -1,0 +1,208 @@
+/* Layout */
+
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+
+
+/* default  */
+
+$default-width-percent: 100%;
+$default-color-font: #EBEBEB;
+$default-color-bg: #629C44;
+
+// img 
+
+$img-default-width: 100%;
+$img-default-height: 100%;
+$img-default-object-fit: 'cover';
+
+
+
+/* Body */
+$body-layout-type: 'body';
+$header-height: 110px;
+$footer-height: 267px;
+
+$body-layout-map: (
+    header: $header-height,
+    footer: $footer-height
+
+);
+
+/* Header */
+$header-container-bg-color: #629C44;
+$header-container-width: 100%;
+$header-layout-type: 'header';
+$header-content-width: 800px;
+$header-content-up-height: 75px;
+$header-content-bottom-height: 35px;
+$header-content-bottom-ul-grid-template-rows: 30px;
+$header-content-bottom-link-font-color: #EBEBEB;
+$header-content-bottom-link-font-size: 1em;
+$header-content-bottom-link-font-weight: 350;
+
+$header-layout-map: (
+    header-content: $header-content-width,
+    header-content-up: $header-content-up-height,
+    header-content-bottom: $header-content-bottom-height
+);
+
+
+
+/* Main */
+$main-container-margin-bottom: 50px;
+$main-layout-type: 'main-home';
+$main-home-layout-map: (
+    main-banner-first: 300px,
+    main-cards-first: 480px,
+    main-banner-second: 250px,
+    main-cards-second: 480px,
+    main-cards-gap: 20px
+);
+
+
+/* main-sections-banner-first */
+$sections-banner-first-width-percent: 90%;
+
+
+/* Cards */
+$default-container-card-width: 380px;
+$default-gap-card: 5px;
+$default-card-title-font-size: 1.5em;
+$default-card-title-font-weight: 500;
+$default-card-span-font-size: 1em;
+$default-card-span-font-weight: 380;
+
+
+/* main-section-card-container-first */
+$main-layout-card-first-type: 'main-cards-first';
+$main-layout-card-first-map: (
+    main-card-first-title: 40px,
+    main-card-first-img-medium: auto,
+    main-card-first-small: 160px,
+    main-card-gap: 10px
+);
+
+$main-section-cards-first-width: 80%;
+$card-first-name-margin-top: 7px;
+
+
+/* main-sections-banner-second */
+$sections-banner-second-width-percent: 75%;
+
+/* main-section-cards-second */
+$main-layout-card-second-type: 'main-cards-second';
+$main-layout-card-second-map: (
+    main-card-second-title: 40px,
+    main-card-second-small-container: auto,
+    main-card-gap: 10px
+);
+
+
+
+
+
+/* Footer */
+$footer-container-width: 100%;
+
+/* _footer-container */
+$_footer-container-width: 80%;
+/* footer-content-sections */
+$footer-content-sections-width: 90%;
+$footer-content-sections-margin-top: 20px;
+
+
+/* footer-content-section-card */
+$footer-content-section-card-width: 230px;
+$footer-content-section-card-height: 100%;
+$footer-content-section-card-gap: 15px;
+$footer-section-card-title-height: 30px;
+$footer-section-card-title-font-size: 1.2em; //1em;
+$footer-section-card-title-font-weight: 300;
+
+/* footer-section-card-links */
+$footer-section-card-links-height: 190px;
+$footer-section-card-links-font-size: 0.9em; //0.75em;
+$footer-section-card-links-font-weight: 300;
+
+/* footer-section-card-images */
+$footer-section-card-images-height: 190px;
+$footer-section-card-images-gap: 10px;
+$footer-section-card-img-width: 25px;
+$footer-section-card-img-height: 30px;
+$footer-section-card-img-gap: 10px;
+
+/* footer-content-copyright */
+$footer-content-copyright-width: 100%;
+$footer-content-copyright-span-font-weight: 300;
+$footer-content-copyright-span-font-size: 0.75em;
+
+
+
+/* MediaQuery */
+$default-with-limit-one: 1318px;
+$default-with-limit-two: 1176px;
+$default-with-limit-three: 1056px;
+$default-with-limit-four: 768px;
+$default-with-limit-five: 707px;
+$default-with-limit-six: 608px;
+
+
+
+/* Main */
+$mobile-main-layout-type: 'main-home';
+$mobile-main-home-layout-map: (
+    main-banner-first: 300px,
+    main-cards-first: auto,
+    main-banner-second: 250px,
+    main-cards-second: auto,
+    main-cards-gap: 20px
+);
+
+
+/* Header */
+$mobile-header-height: 70px;
+$mobile-footer-height: auto;
+
+$mobile-body-layout-map: (
+    header: $mobile-header-height,
+    footer: $mobile-footer-height
+
+);
+
+
+$mobile-header-layout-type: 'mobile-header';
+$mobile-header-content-width: 100%;
+$mobile-header-content: 70px;
+
+$mobile-header-layout-map: (
+    header-content: $mobile-header-content-width,
+    header-content-mobile: $mobile-header-content
+);
+
+
+
+/* Products page */
+$default-product-font-weight: 350;
+$default-product-font-size: 1.1em;
+
+$default-product-pricing-font-weight: 400;
+$default-product-pricingfont-size: 1.1em;
+
+
+
+/* Product details */
+$default-product-details-type: 'product-details';
+$default-product-details-events: 20px;
+$default-product-details: auto;
+$default-product-details-selector: 260px;
+$default-product-details-gap: 5px;
+
+$default-product-details-map: (
+    product-details-events: $default-product-details-events,
+    product-details: $default-product-details,
+    product-details-selector: $default-product-details-selector,
+    product-details-gap: $default-product-details-gap,
+);

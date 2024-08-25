@@ -1,0 +1,108 @@
+@import "./vars";
+@import "../components/mixins";
+
+.header-container {
+    background-color: $header-container-bg-color;
+    grid-area: header;
+    width: $header-container-width;
+    display: flex;
+    justify-content: center;
+
+    .header-content {
+        .header-content-up {
+            grid-area: header-content-up;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .header-content-up-logo {
+                span {
+                    color: $default-color-font;
+                    a {
+                        text-decoration: none;
+                        color: $default-color-font;
+                        @include font-setting($default-card-title-font-weight, $default-card-title-font-size);
+                    }
+                }
+            }
+            .header-content-up-search {
+                width: 50%;
+                position: relative;
+
+                input {
+                    width: 100%;
+                    padding: 5px;
+                    padding-right: 35px;
+                    border-radius: 5px 5px 5px 5px;
+                    border: 0;
+                    outline: none;
+                }
+                button {
+                    background-color: lightgray;
+                    padding: 5px 10px;
+                    position: absolute;
+                    border: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin: auto;
+                    border-radius: 0 5px 5px 0;
+                    color: #fff;
+                    cursor: pointer;
+                }
+
+            }
+            .header-content-up-register {
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        a {
+                            color: $header-content-bottom-link-font-color;
+                            text-decoration: none;
+                            @include font-setting($header-content-bottom-link-font-weight, $header-content-bottom-link-font-size);
+                        }
+                    }
+
+                }
+            }
+        }
+        .header-content-bottom {
+            grid-area: header-content-bottom;
+
+            #check {
+                display: none;
+            }
+            .checkbtn {
+                display: none;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-template-rows: $header-content-bottom-ul-grid-template-rows;
+                grid-template-columns: repeat(5, 1fr);
+
+                li {
+                    a {
+                        color: $header-content-bottom-link-font-color;
+                        text-decoration: none;
+                        @include font-setting($header-content-bottom-link-font-weight, $header-content-bottom-link-font-size);
+                    }
+                    .header-menu-link {
+                        padding: 8px 15px;
+                        border-radius: 3px;
+                    }
+                    .header-menu-link:hover {
+                        background-color: #4e773a;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
