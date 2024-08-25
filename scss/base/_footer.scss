@@ -1,0 +1,89 @@
+@import "./vars";
+@import "../components/mixins";
+
+.footer-container {
+    background-color: #202123;
+    grid-area: footer;
+
+    width: $footer-container-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ._footer-container {
+        width: $_footer-container-width;
+        display: flex;
+        justify-content: center;
+        .footer-content-sections {
+            margin-top: $footer-content-sections-margin-top;
+            width: $footer-content-sections-width;
+            display: flex;
+            justify-content: space-around;  
+    
+            .footer-content-section-card {
+                width: $footer-content-section-card-width;
+                height: $footer-content-section-card-height;
+                display: flex;
+                gap: $footer-content-section-card-gap;
+                flex-direction: column;
+                justify-content: center;
+    
+                .footer-section-card-title {
+                    height: $footer-section-card-title-height;
+                    display: flex;
+                    justify-content: center;
+    
+                    color: white;
+                    @include font-setting($footer-section-card-title-font-weight, $footer-section-card-title-font-size);
+                    font-weight: bold;
+    
+                    span {
+                        margin-top: 10px;
+                    }
+                }
+                .footer-section-card-links {
+                    height: $footer-section-card-links-height;
+                    ul {
+                        list-style: none;
+                        li {
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                @include font-setting($footer-section-card-links-font-weight, $footer-section-card-links-font-size);
+                            }
+    
+                        }
+                    }
+                }
+                .footer-section-card-images {
+                    display: flex;
+                    gap: $footer-section-card-images-gap;
+                    height: $footer-section-card-images-height;
+                    justify-content: center;
+                }
+                .footer-section-card-img {
+                    gap: $footer-section-card-img-gap;
+                    display: flex;
+                    flex-direction: column;
+                    img {
+                        width: $footer-section-card-img-width;
+                        height: $footer-section-card-img-height;
+                    }
+                }
+            }
+        }
+    }
+    .footer-content-copyright {
+        background-color: #131A22;
+        width: $footer-content-copyright-width;
+        height: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            color: white;
+            @include font-setting($footer-content-copyright-span-font-weight, $footer-content-copyright-span-font-size);
+        }
+    }
+}

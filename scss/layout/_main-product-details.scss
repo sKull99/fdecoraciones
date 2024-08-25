@@ -1,0 +1,49 @@
+@import "../base/vars";
+@import "../components/mixins";
+
+.main-product-details-container {
+    grid-area: main;
+
+    @include body-layout($default-product-details-type, $default-product-details-map);
+    .section-carousel-events {
+        grid-area: section-carousel-events;
+    }
+    .section-product-details {
+        margin-top: 20px;
+        grid-area: section-product-details;
+        display: flex;
+        justify-content: center;
+        .section-product-details-container {
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: 0.3fr 1fr 1.3fr;
+            .product-details-box-img-small {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+               align-items: center;
+            }
+            .product-details-box-img-medium {
+                ._product-details-box-img-medium {
+                }
+                
+            }
+            .product-defails-box {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                .box-title {
+                    h2 {}
+                }
+                .box-price {}
+                .box-size {}
+                .box-details {}
+                .box-about {}
+            }
+        }
+    }
+    .section-carousel-selector {
+        grid-area: section-carousel-selector;
+        .box-carrusel {}
+    }
+}

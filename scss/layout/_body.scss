@@ -1,0 +1,12 @@
+@import "../base/vars";
+@import "../components/mixins";
+
+.body-container {
+  @include body-layout($body-layout-type, $body-layout-map);  
+}
+
+@media (max-width: $default-with-limit-four) { 
+  .body-container {
+    @include body-layout($body-layout-type, $mobile-body-layout-map);
+  }
+}

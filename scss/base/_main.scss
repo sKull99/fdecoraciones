@@ -1,0 +1,182 @@
+@import "./vars";
+@import "../components/mixins";
+
+.main-container {
+    margin-top: 20px;
+    margin-bottom: $main-container-margin-bottom;
+    grid-area: main;
+    gap: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    .main-sections-banner-first {
+        width: $default-width-percent;
+        grid-area: main-sections-banner-first;
+        display: flex;
+        justify-content: center;
+
+        .sections-banner-first {
+            width: $sections-banner-first-width-percent;
+            height: 300px;
+            img {
+                @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+            }
+        }
+    }
+
+    .main-section-card-container-first {
+        grid-area: main-section-card-container-first;
+        width: $default-width-percent;
+        display: flex;
+        justify-content: center;
+
+        ._main-section-card-container-first {
+            width: $main-section-cards-first-width;
+            display: flex;
+            justify-content: space-around;
+
+            .main-section-card-first {
+                gap: $default-gap-card;
+                width: $default-container-card-width;
+                border-radius: 3px;
+                box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+                transition: all 400ms ease;
+
+                .main-card-first-title {
+                    grid-area: main-card-first-title;
+                    h2 {
+                        margin-left: 15px;
+                        margin-top: 9px;
+                        @include font-setting($default-card-title-font-weight, $default-card-title-font-size);
+                    }
+                }
+                .main-card-first-img-medium {
+                    grid-area: main-card-first-img-medium;
+                    .main-card-first-img {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        img {
+                            @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+                        }
+                    }
+                    .main-card-first-name {
+                        margin-top: $card-first-name-margin-top;
+                        span {
+                            margin-left: 15px;
+                            @include font-setting($default-card-span-font-weight, $default-card-span-font-size);
+                        }
+                    }
+
+                }
+                .main-card-first-small-container {
+                    grid-area: main-card-first-small;
+                    display: flex;
+                    justify-content: space-around;
+                    .main-card-first-small {
+                        .main-card-first-small-img {   
+                            img {
+                                @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+                            }
+                        }
+                        .main-card-first-small-name {
+                            margin-top: $card-first-name-margin-top;
+                            span {
+                                @include font-setting($default-card-span-font-weight, $default-card-span-font-size);
+                            }
+                        }
+                    }
+                }
+            }
+            .main-section-card-first:hover {
+                box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+                transform: translateY(-2%);
+            }
+        }
+
+
+    }
+
+
+
+
+
+
+    .main-sections-banner-second {
+        width: $default-width-percent;
+        grid-area: main-sections-banner-second;
+        display: flex;
+        
+        justify-content: center;
+        
+        .sections-banner-second {
+            width: $sections-banner-second-width-percent;
+            img {
+                @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+            }
+        }
+    }
+
+
+
+    .main-section-card-container-second {
+        grid-area: main-section-cards-second;
+        width: $default-width-percent;
+        display: flex;
+        justify-content: center;
+
+        ._main-section-card-container-second {
+            width: $main-section-cards-first-width;
+            display: flex;
+            justify-content: space-around;
+
+            .main-section-card-second {
+                width: $default-container-card-width;
+                border-radius: 3px;
+                box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+                transition: all 400ms ease;
+                .main-card-second-title {
+                    h2 {
+                        margin-top: 10px;
+                        margin-left: 13px;
+                        margin-bottom: 0px;
+                        @include font-setting($default-card-title-font-weight, $default-card-title-font-size);
+                    }
+                }
+                .main-card-second-small-container {
+                    gap: $default-gap-card;
+                    .card-second-top,
+                    .card-second-bottom {
+                        display: flex;
+                        justify-content: space-around;
+                        .main-card-second-small {
+                            .card-second-small-img {
+                                img {
+                                    @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+                                }
+                            }
+                            .card-second-small-name {
+                                margin-top: 5px;
+                                padding-bottom: 10px;
+                                span {
+                                    @include font-setting($default-card-span-font-weight, $default-card-span-font-size);
+                                }
+                            }
+                        }
+                    }
+                    .card-second-bottom {
+                        margin-top: 5px;
+                    }
+
+                }
+            }
+            .main-section-card-second:hover {
+                box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+                transform: translateY(-2%);
+            }
+        }
+    }
+}

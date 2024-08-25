@@ -1,0 +1,1369 @@
+/* Layout */
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+.body-container {
+  display: grid;
+  grid-template-rows: 110px auto 267px;
+  grid-template-areas: "header" "main" "footer";
+}
+
+@media (max-width: 768px) {
+  .body-container {
+    display: grid;
+    grid-template-rows: 70px auto auto;
+    grid-template-areas: "header" "main" "footer";
+  }
+}
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+.header-content {
+  display: grid;
+  grid-template-rows: 75px 35px;
+  grid-template-columns: 800px;
+  grid-template-areas: "header-content-up" "header-content-bottom";
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    height: 70px;
+  }
+  .header-container .header-content {
+    display: grid;
+    grid-template-areas: "header-content-mobile";
+  }
+}
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+.main-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 300px 480px 250px 480px;
+  grid-template-areas: "main-sections-banner-first" "main-section-card-container-first" "main-sections-banner-second" "main-section-card-container-second";
+  /* Cards first */
+  /* Cards second */
+}
+.main-container .main-section-card-first {
+  display: grid;
+  grid-template-rows: 40px auto 160px;
+  grid-template-areas: "main-card-first-title" "main-card-first-img-medium" "main-card-first-small";
+}
+.main-container .main-section-card-second {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 40px auto;
+  grid-template-areas: "main-card-second-title" "main-card-second-small-container";
+}
+
+@media (max-width: 707px) {
+  .main-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 300px auto 250px auto;
+    grid-template-areas: "main-sections-banner-first" "main-section-card-container-first" "main-sections-banner-second" "main-section-card-container-second";
+  }
+}
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+.main-products-container {
+  display: grid;
+  grid-gap: 20px;
+  justify-content: center;
+  grid-template-rows: auto auto;
+}
+.main-products-container .main-section-products .section-product-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-products-container .main-section-products .section-product-container .card-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+.body-product-container {
+  display: grid;
+  grid-template-rows: 110px auto 267px;
+  grid-template-areas: "header" "main" "footer";
+}
+
+@media (max-width: 768px) {
+  .body-product-container {
+    display: block;
+  }
+}
+@media (max-width: 707px) {
+  .body-product-container {
+    display: block;
+  }
+}
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+.body-product-details {
+  display: grid;
+  grid-template-rows: 110px auto 267px;
+  grid-template-areas: "header" "main" "footer";
+}
+
+@media (max-width: 768px) {
+  .body-product-details {
+    display: block;
+  }
+}
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+.main-product-details-container {
+  grid-area: main;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: 20px auto 260px;
+  grid-template-areas: "section-carousel-events" "section-product-details" "section-carousel-selector";
+}
+.main-product-details-container .section-carousel-events {
+  grid-area: section-carousel-events;
+}
+.main-product-details-container .section-product-details {
+  margin-top: 20px;
+  grid-area: section-product-details;
+  display: flex;
+  justify-content: center;
+}
+.main-product-details-container .section-product-details .section-product-details-container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 0.3fr 1fr 1.3fr;
+}
+.main-product-details-container .section-product-details .section-product-details-container .product-details-box-img-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-product-details-container .section-product-details .section-product-details-container .product-defails-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main-product-details-container .section-carousel-selector {
+  grid-area: section-carousel-selector;
+}
+/* Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+.header-container {
+  background-color: #629C44;
+  grid-area: header;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.header-container .header-content .header-content-up {
+  grid-area: header-content-up;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-container .header-content .header-content-up .header-content-up-logo span {
+  color: #EBEBEB;
+}
+.header-container .header-content .header-content-up .header-content-up-logo span a {
+  text-decoration: none;
+  color: #EBEBEB;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.header-container .header-content .header-content-up .header-content-up-search {
+  width: 50%;
+  position: relative;
+}
+.header-container .header-content .header-content-up .header-content-up-search input {
+  width: 100%;
+  padding: 5px;
+  padding-right: 35px;
+  border-radius: 5px 5px 5px 5px;
+  border: 0;
+  outline: none;
+}
+.header-container .header-content .header-content-up .header-content-up-search button {
+  background-color: lightgray;
+  padding: 5px 10px;
+  position: absolute;
+  border: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
+}
+.header-container .header-content .header-content-up .header-content-up-register ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header-container .header-content .header-content-up .header-content-up-register ul li a {
+  color: #EBEBEB;
+  text-decoration: none;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 350;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.header-container .header-content .header-content-bottom {
+  grid-area: header-content-bottom;
+}
+.header-container .header-content .header-content-bottom #check {
+  display: none;
+}
+.header-container .header-content .header-content-bottom .checkbtn {
+  display: none;
+}
+.header-container .header-content .header-content-bottom ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 30px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.header-container .header-content .header-content-bottom ul li a {
+  color: #EBEBEB;
+  text-decoration: none;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 350;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.header-container .header-content .header-content-bottom ul li .header-menu-link {
+  padding: 8px 15px;
+  border-radius: 3px;
+}
+.header-container .header-content .header-content-bottom ul li .header-menu-link:hover {
+  background-color: #4e773a;
+  transition: 0.5s;
+}
+
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+.main-container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  grid-area: main;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .main-sections-banner-first {
+  width: 100%;
+  grid-area: main-sections-banner-first;
+  display: flex;
+  justify-content: center;
+}
+.main-container .main-sections-banner-first .sections-banner-first {
+  width: 90%;
+  height: 300px;
+}
+.main-container .main-sections-banner-first .sections-banner-first img {
+  width: 100%;
+  height: 100%;
+  object-fit: "cover";
+}
+.main-container .main-section-card-container-first {
+  grid-area: main-section-card-container-first;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first {
+  gap: 5px;
+  width: 380px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first .main-card-first-title {
+  grid-area: main-card-first-title;
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first .main-card-first-title h2 {
+  margin-left: 15px;
+  margin-top: 9px;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first .main-card-first-img-medium {
+  grid-area: main-card-first-img-medium;
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first .main-card-first-img-medium .main-card-first-img {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first .main-card-first-img-medium .main-card-first-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: "cover";
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first .main-card-first-img-medium .main-card-first-name {
+  margin-top: 7px;
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first .main-card-first-img-medium .main-card-first-name span {
+  margin-left: 15px;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 380;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first .main-card-first-small-container {
+  grid-area: main-card-first-small;
+  display: flex;
+  justify-content: space-around;
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first .main-card-first-small-container .main-card-first-small .main-card-first-small-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: "cover";
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first .main-card-first-small-container .main-card-first-small .main-card-first-small-name {
+  margin-top: 7px;
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first .main-card-first-small-container .main-card-first-small .main-card-first-small-name span {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 380;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2%);
+}
+.main-container .main-sections-banner-second {
+  width: 100%;
+  grid-area: main-sections-banner-second;
+  display: flex;
+  justify-content: center;
+}
+.main-container .main-sections-banner-second .sections-banner-second {
+  width: 75%;
+}
+.main-container .main-sections-banner-second .sections-banner-second img {
+  width: 100%;
+  height: 100%;
+  object-fit: "cover";
+}
+.main-container .main-section-card-container-second {
+  grid-area: main-section-cards-second;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-container .main-section-card-container-second ._main-section-card-container-second {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second {
+  width: 380px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second .main-card-second-title h2 {
+  margin-top: 10px;
+  margin-left: 13px;
+  margin-bottom: 0px;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second .main-card-second-small-container {
+  gap: 5px;
+}
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second .main-card-second-small-container .card-second-top,
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second .main-card-second-small-container .card-second-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second .main-card-second-small-container .card-second-top .main-card-second-small .card-second-small-img img,
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second .main-card-second-small-container .card-second-bottom .main-card-second-small .card-second-small-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: "cover";
+}
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second .main-card-second-small-container .card-second-top .main-card-second-small .card-second-small-name,
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second .main-card-second-small-container .card-second-bottom .main-card-second-small .card-second-small-name {
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second .main-card-second-small-container .card-second-top .main-card-second-small .card-second-small-name span,
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second .main-card-second-small-container .card-second-bottom .main-card-second-small .card-second-small-name span {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 380;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second .main-card-second-small-container .card-second-bottom {
+  margin-top: 5px;
+}
+.main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2%);
+}
+
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+.main-products-container {
+  grid-area: main;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+.main-products-container .main-sections-banner-first {
+  display: flex;
+  justify-content: center;
+}
+.main-products-container .main-sections-banner-first .sections-banner-first {
+  width: 83%;
+  height: 300px;
+}
+.main-products-container .main-sections-banner-first .sections-banner-first img {
+  width: 100%;
+  height: 100%;
+  object-fit: "cover";
+}
+.main-products-container .main-section-products {
+  display: flex;
+  justify-content: center;
+}
+.main-products-container .main-section-products .section-product-container {
+  width: 90%;
+}
+.main-products-container .main-section-products .section-product-container .card-product {
+  width: 340px;
+  height: 450px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+.main-products-container .main-section-products .section-product-container .card-product .gallery-product-link {
+  text-decoration: none;
+}
+.main-products-container .main-section-products .section-product-container .card-product .gallery-product-link .card-product-img {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.main-products-container .main-section-products .section-product-container .card-product .gallery-product-link .card-product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: "cover";
+}
+.main-products-container .main-section-products .section-product-container .card-product .gallery-product-link .card-product-title {
+  margin-top: 15px;
+  width: 300px;
+}
+.main-products-container .main-section-products .section-product-container .card-product .gallery-product-link .card-product-title span {
+  color: black;
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 350;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-products-container .main-section-products .section-product-container .card-product .card-product-precie {
+  margin-bottom: 15px;
+  width: 300px;
+}
+.main-products-container .main-section-products .section-product-container .card-product .card-product-precie span {
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-products-container .main-section-products .section-product-container .card-product:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2%);
+}
+
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+.footer-container {
+  background-color: #202123;
+  grid-area: footer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-container ._footer-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.footer-container ._footer-container .footer-content-sections {
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-container ._footer-container .footer-content-sections .footer-content-section-card {
+  width: 230px;
+  height: 100%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-container ._footer-container .footer-content-sections .footer-content-section-card .footer-section-card-title {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+}
+.footer-container ._footer-container .footer-content-sections .footer-content-section-card .footer-section-card-title span {
+  margin-top: 10px;
+}
+.footer-container ._footer-container .footer-content-sections .footer-content-section-card .footer-section-card-links {
+  height: 190px;
+}
+.footer-container ._footer-container .footer-content-sections .footer-content-section-card .footer-section-card-links ul {
+  list-style: none;
+}
+.footer-container ._footer-container .footer-content-sections .footer-content-section-card .footer-section-card-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.footer-container ._footer-container .footer-content-sections .footer-content-section-card .footer-section-card-images {
+  display: flex;
+  gap: 10px;
+  height: 190px;
+  justify-content: center;
+}
+.footer-container ._footer-container .footer-content-sections .footer-content-section-card .footer-section-card-img {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-container ._footer-container .footer-content-sections .footer-content-section-card .footer-section-card-img img {
+  width: 25px;
+  height: 30px;
+}
+.footer-container .footer-content-copyright {
+  background-color: #131A22;
+  width: 100%;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-container .footer-content-copyright span {
+  color: white;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+.main-product-details-container {
+  grid-area: main;
+}
+.main-product-details-container .section-carousel-events {
+  background-color: #EBEBEB;
+}
+.main-product-details-container .section-product-details {
+  margin-top: 20px;
+}
+.main-product-details-container .section-product-details .section-product-details-container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 0.3fr 1fr 1.3fr;
+}
+.main-product-details-container .section-product-details .section-product-details-container .product-defails-box .box-title h2 {
+  margin-bottom: 0;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-product-details-container .section-product-details .section-product-details-container .product-defails-box .box-price span {
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-product-details-container .section-product-details .section-product-details-container .product-defails-box .box-size span {
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-product-details-container .section-product-details .section-product-details-container .product-defails-box .box-details span {
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-product-details-container .section-product-details .section-product-details-container .product-defails-box .box-details ul {
+  list-style: none;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 350;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-product-details-container .section-product-details .section-product-details-container .product-defails-box .box-about span {
+  font-size: 1.1em;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main-product-details-container .section-carousel-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-product-details-container .section-carousel-selector i {
+  height: 46px;
+  width: 46px;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 46px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #EBEBEB;
+}
+.main-product-details-container .section-carousel-selector .box-carrusel {
+  padding: 0 10px;
+  border: 1px solid;
+  max-width: 762px;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+}
+.main-product-details-container .section-carousel-selector .box-carrusel img {
+  height: 130px;
+  object-fit: cover;
+}
+
+/* MediaQuery */
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+@media (max-width: 1318px) {
+  .main-container .main-section-card-container-first ._main-section-card-container-first {
+    width: 90%;
+  }
+  .main-container .main-sections-banner-second .sections-banner-second {
+    width: 90%;
+  }
+  .main-container .main-section-card-container-second ._main-section-card-container-second {
+    width: 90%;
+  }
+}
+@media (max-width: 1176px) {
+  .main-container .main-sections-banner-first .sections-banner-first {
+    width: 100%;
+  }
+  .main-container .main-section-card-container-first ._main-section-card-container-first {
+    width: 100%;
+  }
+  .main-container .main-sections-banner-second .sections-banner-second {
+    width: 100%;
+  }
+  .main-container .main-section-card-container-second ._main-section-card-container-second {
+    width: 100%;
+  }
+}
+@media (max-width: 1056px) {
+  .main-container .main-sections-banner-first .sections-banner-first {
+    width: 100%;
+  }
+  .main-container .main-section-card-container-first ._main-section-card-container-first {
+    width: 100%;
+  }
+  .main-container .main-section-card-container-first ._main-section-card-container-first .card-first-three {
+    display: none;
+  }
+  .main-container .main-sections-banner-second .sections-banner-second {
+    width: 100%;
+  }
+  .main-container .main-section-card-container-second ._main-section-card-container-second {
+    width: 100%;
+  }
+  .main-container .main-section-card-container-second ._main-section-card-container-second .card-second-three {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .main-container {
+    margin-top: 0;
+  }
+}
+@media (max-width: 707px) {
+  .main-container {
+    margin-top: 0;
+  }
+  .main-container .main-section-card-container-first ._main-section-card-container-first {
+    gap: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first {
+    display: block;
+  }
+  .main-container .main-section-card-container-first ._main-section-card-container-first .main-section-card-first .main-card-first-title {
+    display: flex;
+    justify-content: center;
+  }
+  .main-container .main-section-card-container-second ._main-section-card-container-second {
+    gap: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second {
+    display: block;
+  }
+  .main-container .main-section-card-container-second ._main-section-card-container-second .main-section-card-second .main-card-second-title {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+@media (max-width: 768px) {
+  .header-container {
+    position: fixed;
+  }
+  .header-container .header-content {
+    grid-area: header-content-mobile;
+  }
+  .header-container .header-content .header-content-up .header-content-up-logo {
+    position: fixed;
+    top: 12px;
+    left: 30px;
+  }
+  .header-container .header-content .header-content-up .header-content-up-search {
+    display: none;
+  }
+  .header-container .header-content .header-content-up .header-content-up-register {
+    display: none;
+  }
+  .header-container .header-content .header-content-bottom #check {
+    appearance: none;
+  }
+  .header-container .header-content .header-content-bottom .checkbtn {
+    display: block;
+  }
+  .header-container .header-content .header-content-bottom .checkbtn .menu-icon {
+    color: #EBEBEB;
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+  }
+  .header-container .header-content .header-content-bottom #check:checked ~ ul {
+    left: 0;
+    transition: all 0.25s;
+  }
+  .header-container .header-content .header-content-bottom ul {
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background: #202123;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+  }
+  .header-container .header-content .header-content-bottom ul li {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .header-container .header-content .header-content-bottom ul li:last-child {
+    background: none;
+    padding: 1rem;
+  }
+}
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+@media (max-width: 707px) {
+  .footer-container ._footer-container {
+    width: 100%;
+  }
+}
+@media (max-width: 608px) {
+  .footer-container ._footer-container {
+    margin-bottom: 20px;
+  }
+  .footer-container ._footer-container .footer-content-sections {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container ._footer-container .footer-content-sections .footer-content-section-card .footer-section-card-links {
+    height: auto;
+    width: auto;
+  }
+  .footer-container ._footer-container .footer-content-sections .footer-content-section-card .footer-section-card-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container ._footer-container .footer-content-sections .footer-content-section-card .footer-section-card-images {
+    width: auto;
+    height: auto;
+  }
+  .footer-container ._footer-container .footer-content-sections .footer-content-section-card .footer-section-card-images .footer-section-card-img {
+    display: flex;
+    flex-direction: row;
+  }
+}
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+@media (max-width: 1056px) {
+  .main-products-container {
+    margin-top: 0px;
+  }
+  .main-products-container .main-sections-banner-first .sections-banner-first {
+    width: 100%;
+  }
+}
+@media (max-width: 707px) {
+  .main-products-container .main-sections-banner-first .sections-banner-first {
+    width: 100%;
+  }
+}
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+@media (max-width: 768px) {
+  .main-product-details-container .section-product-details .section-product-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-product-details-container .section-product-details .section-product-details-container .product-defails-box {
+    margin-top: 30px;
+  }
+  .main-product-details-container .section-carousel-selector .box-carrusel {
+    max-width: 500px;
+  }
+}
+@media (max-width: 707px) {
+  .main-product-details-container .section-carousel-selector .box-carrusel {
+    max-width: 300px;
+  }
+}
+@media (max-width: 707px) {
+  .main-product-details-container .section-product-details .section-product-details-container .product-details-box-img-small .box-mini-img img:last-child {
+    display: none;
+  }
+  .main-product-details-container .section-carousel-selector .box-carrusel {
+    max-width: 150px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

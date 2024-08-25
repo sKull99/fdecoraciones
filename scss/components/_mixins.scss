@@ -1,0 +1,111 @@
+@use "sass:map";
+
+
+/* Default Grid */
+@mixin body-layout($body-layout-type, $body-layout-map) {
+    @if $body-layout-type == body {
+      $heade-height: map-get($body-layout-map, header);
+      $footer-height: map-get($body-layout-map, footer);
+
+      display: grid;
+      grid-template-rows: $heade-height auto $footer-height;
+      grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    @else if $body-layout-type == header {
+      $header-content: map-get($body-layout-map, header-content);
+      $header-content-up: map-get($body-layout-map, header-content-up);
+      $header-content-bottom: map-get($body-layout-map, header-content-bottom);
+
+      display: grid;
+      grid-template-rows: $header-content-up  $header-content-bottom;
+      grid-template-columns: $header-content; 
+      grid-template-areas:
+        "header-content-up"
+        "header-content-bottom";
+    }
+    @else if $body-layout-type == mobile-header { 
+      $header-content: map-get($body-layout-map, header-content);
+      $header-content-mobile: map-get($body-layout-map, header-content-mobile);
+
+      display: grid;
+      grid-template-rows: $header-content-mobile;
+      grid-template-columns: $header-content; 
+      grid-template-areas:
+        "header-content-mobile";
+    }
+    @else if $body-layout-type == main-home {
+      $main-sections-banner-first: map-get($body-layout-map, main-banner-first);
+      $main-section-cards-first: map-get($body-layout-map, main-cards-first);
+      $main-sections-banner-second: map-get($body-layout-map, main-banner-second);
+      $main-section-cards-second: map-get($body-layout-map, main-cards-second);
+      $main-cards-gap: map-get($body-layout-map, main-cards-gap);
+
+      display: grid;
+      grid-gap: $main-cards-gap;
+      grid-template-rows: $main-sections-banner-first  $main-section-cards-first $main-sections-banner-second $main-section-cards-second;
+      grid-template-areas:
+        "main-sections-banner-first"
+        "main-section-card-container-first"
+        "main-sections-banner-second"
+        "main-section-card-container-second";
+
+    }
+    @else if $body-layout-type == main-cards-first {
+      $main-card-first-title: map-get($body-layout-map, main-card-first-title);
+      $main-card-first-img-medium: map-get($body-layout-map, main-card-first-img-medium);
+      $main-card-first-small: map-get($body-layout-map, main-card-first-small);
+      $main-card-gap: map-get($body-layout-map, main-card-first-gap);
+
+      display: grid;
+      grid-gap: $main-card-gap;
+      grid-template-rows: $main-card-first-title  $main-card-first-img-medium $main-card-first-small;
+      grid-template-areas:
+        "main-card-first-title"
+        "main-card-first-img-medium"
+        "main-card-first-small";
+    }
+    @else if $body-layout-type == main-cards-second {
+      $main-card-gap: map-get($body-layout-map, main-card-gap);
+      $main-card-second-title: map-get($body-layout-map, main-card-second-title);
+      $main-card-second-small-container:  map-get($body-layout-map, main-card-second-small-container);
+      display: grid;
+      grid-gap: $main-card-gap;
+      grid-template-rows: $main-card-second-title  $main-card-second-small-container;
+      grid-template-areas:
+        "main-card-second-title"
+        "main-card-second-small-container";
+    }
+    
+    @else if $body-layout-type == product-details { // Product details
+      $product-details-events: map-get($body-layout-map, product-details-events);
+      $product-details: map-get($body-layout-map, product-details);
+      $product-details-selector: map-get($body-layout-map, product-details-selector);
+      $product-details-gap: map-get($body-layout-map, product-details-gap);
+      display: grid;
+      grid-gap: $product-details-gap;
+      grid-template-rows: $product-details-events  $product-details $product-details-selector;
+      grid-template-areas:
+        "section-carousel-events"
+        "section-product-details"
+        "section-carousel-selector";
+    }
+}
+
+
+
+@mixin font-setting($weight, $size) {
+  font-size: $size;
+  font-style: normal;
+  font-weight: $weight;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+
+@mixin object-fit-setting($width-percent, $height-percent, $object-fit-type) {
+  width: $width-percent;
+  height: $height-percent;
+  object-fit: $object-fit-type;
+}
