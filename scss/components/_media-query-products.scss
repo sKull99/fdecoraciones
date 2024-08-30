@@ -62,13 +62,17 @@
     }
 }
 
+@media (max-width: $default-with-limit-four) {
+    .main-products-container {
+        margin-top: 0;
+    }
+}
+
 
 @media (max-width: $default-with-limit-five) { 
     .main-products-container {
-        .main-sections-banner-first {
-            .sections-banner-first {
-                width: $default-width-percent;
-            }
+        .main-sections-banner-first { 
+            display: none; 
         }
         .main-section-products {   
             .section-product-container {                

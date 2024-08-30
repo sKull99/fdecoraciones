@@ -164,19 +164,20 @@ https://dev.to/fernandomoyano/sass-464d
 /* Products page */
 /* Product details */
 /* Default Grid */
-.main-products-container {
+.body-product-container .main-products-container {
+  grid-area: main;
   display: grid;
   grid-gap: 20px;
   justify-content: center;
   grid-template-rows: auto auto;
 }
-.main-products-container .main-section-products .section-product-container {
+.body-product-container .main-products-container .main-section-products .section-product-container {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
-.main-products-container .main-section-products .section-product-container .card-product {
+.body-product-container .main-products-container .main-section-products .section-product-container .card-product {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -215,16 +216,6 @@ https://dev.to/fernandomoyano/sass-464d
   grid-template-areas: "header" "main" "footer";
 }
 
-@media (max-width: 768px) {
-  .body-product-container {
-    display: block;
-  }
-}
-@media (max-width: 707px) {
-  .body-product-container {
-    display: block;
-  }
-}
 /* Layout */
 /* 
 De aqui saque la estructura que me parece mucho mejor
@@ -1462,9 +1453,14 @@ https://dev.to/fernandomoyano/sass-464d
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .main-products-container {
+    margin-top: 0;
+  }
+}
 @media (max-width: 707px) {
-  .main-products-container .main-sections-banner-first .sections-banner-first {
-    width: 100%;
+  .main-products-container .main-sections-banner-first {
+    display: none;
   }
 }
 /* Layout */
