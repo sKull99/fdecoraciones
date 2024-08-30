@@ -14,8 +14,14 @@
             width: 83%;
             height: 300px;
 
-            img {
-                @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+            
+            .carousel-indicators {
+
+            }
+            .carousel-inner {
+                img {
+                    @include object-fit-setting($img-default-width, 300px, $img-default-object-fit);
+                }
             }
         }
     }
@@ -38,7 +44,7 @@
                         justify-content: center;
 
                         img {
-                            @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+                            @include object-fit-setting(300px, $img-default-height, $img-default-object-fit);
                         }
                     }
                     .card-product-title {
