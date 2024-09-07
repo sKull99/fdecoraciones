@@ -19,12 +19,25 @@
         display: flex;
         justify-content: center;
 
+        .carousel-indicators { }
+
         .sections-banner-first {
             width: $sections-banner-first-width-percent;
             height: 300px;
-            img {
-                @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+            
+            .carousel-inner {
+                .carousel-item {
+                    img {
+                        height: 300px;
+                        object-fit: cover;
+                        
+                    }
+                }
             }
+
+            .carousel-control-prev {}
+            .carousel-control-next {}
+
         }
     }
 
@@ -79,7 +92,7 @@
                     .main-card-first-small {
                         .main-card-first-small-img {   
                             img {
-                                @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+                                @include object-fit-setting($img-default-w, $img-default-h, $img-default-object-fit);
                             }
                         }
                         .main-card-first-small-name {
@@ -114,8 +127,16 @@
         
         .sections-banner-second {
             width: $sections-banner-second-width-percent;
-            img {
-                @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+            
+            .carousel-indicators {
+
+            }
+            .carousel-inner {
+                .carousel-item {
+                    img {
+                        @include object-fit-setting($img-default-width, 250px, $img-default-object-fit);
+                    }
+                }
             }
         }
     }
@@ -155,7 +176,7 @@
                         .main-card-second-small {
                             .card-second-small-img {
                                 img {
-                                    @include object-fit-setting($img-default-width, $img-default-height, $img-default-object-fit);
+                                    @include object-fit-setting(160px, 160px, $img-default-object-fit);
                                 }
                             }
                             .card-second-small-name {

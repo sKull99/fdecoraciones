@@ -1,33 +1,36 @@
 @import "../base/vars";
 @import "../components/mixins";
 
-.main-products-container {
-    display: grid;
-    grid-gap: 20px;
-    justify-content: center;
-    grid-template-rows: auto auto;
-
+.body-product-container {
+    .main-products-container {
+        grid-area: main;
+        display: grid;
+        grid-gap: 20px;
+        justify-content: center;
+        grid-template-rows: auto auto;
     
-    .main-sections-banner-first {
-        .sections-banner-first {}
-    }
-
-    .main-section-products {
         
-        .section-product-container {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
+        .main-sections-banner-first {
+            .sections-banner-first {}
+        }
+    
+        .main-section-products {
             
-            .card-product {
+            .section-product-container {
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                .gallery-product-link {
-                    .card-product-img {}
-                    .card-product-title {}
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                .card-product {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    .gallery-product-link {
+                        .card-product-img {}
+                        .card-product-title {}
+                    }
                 }
             }
         }

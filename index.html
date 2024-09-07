@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>FDecoraciones</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="FDecoraciones" />
+    <meta name="description" content="Sitio de decoraciones, muebles, iluminacion, telas" />
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fdecoraciones.vercel.app/" />
+    <meta property="og:title" content="FDecoraciones" />
+    <meta property="og:description" content="Sitio de decoraciones, muebles, iluminacion, telas" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://fdecoraciones.vercel.app/" />
+    <meta property="twitter:title" content="FDecoraciones" />
+    <meta property="twitter:description" content="Sitio de decoraciones, muebles, iluminacion, telas" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0ee5b0efdf.js" crossorigin="anonymous"></script>
-    <title>my project</title>
-    
-
 </head>
 
 <body class="body-container">
@@ -52,8 +65,34 @@
 
     <main class="main-container">
         <section class="main-sections-banner-first">
-            <div class="sections-banner-first">
-                <img src="img/1000x300.png" alt="" srcset="">
+            <div class="sections-banner-first carousel slide" id="sections__banner__first--carrucel">
+                
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#sections__banner__first--carrucel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#sections__banner__first--carrucel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#sections__banner__first--carrucel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/carrusel-1.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/carrusel-2.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/carrusel-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#sections__banner__first--carrucel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#sections__banner__first--carrucel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
             </div>
         </section>
 
@@ -65,27 +104,27 @@
                     </div>
                     <div class="main-card-first-img-medium">
                         <div class="main-card-first-img">
-                            <img src="img/350x209.png" alt="" srcset="">
+                            <img src="img/panel_japones_4_medium.jpg" alt="mueble exterior de diferentes meteriales, mareda y plastico">
                         </div>
                         <div class="main-card-first-name">
-                            <span>Name</span>
+                            <span>Juego de estilo</span>
                         </div>
                     </div>
                     <div class="main-card-first-small-container">
                         <div class="main-card-first-small">
                             <div class="main-card-first-small-img">
-                                <img src="img/160x120.png" alt="mueble">
+                                <img src="img/mueble-home-ex-1.webp" alt="mueble exterior de diferentes meteriales, mareda y plastico">
                             </div>
                             <div class="main-card-first-small-name">
-                                <span>Name</span>
+                                <span>Juego de diseño</span>
                             </div>
                         </div>
                         <div class="main-card-first-small">
                             <div class="main-card-first-small-img">
-                                <img src="img/160x120.png" alt="mueble">
+                                <img src="img/mueble-home-ex-2.webp" alt="mueble exterior de diferentes meteriales, mareda y plastico">
                             </div>
                             <div class="main-card-first-small-name">
-                                <span>Name</span>
+                                <span>Reposera</span>
                             </div>
                         </div>
                     </div>
@@ -97,27 +136,27 @@
                     </div>
                     <div class="main-card-first-img-medium">
                         <div class="main-card-first-img">
-                            <img src="img/350x209.png" alt="" srcset="">
+                            <img src="img/cortinas_de_tela_4_medium.jpg" alt="cortinas dormitorios, cocina, living">
                         </div>
                         <div class="main-card-first-name">
-                            <span>Name</span>
+                            <span>Cortina de blackout</span>
                         </div>
                     </div>
                     <div class="main-card-first-small-container">
                         <div class="main-card-first-small">
                             <div class="main-card-first-small-img">
-                                <img src="img/160x120.png" alt="mueble">
+                                <img src="img/cortina-home-2.webp" alt="cortinas dormitorios, cocina, living">
                             </div>
                             <div class="main-card-first-small-name">
-                                <span>Name</span>
+                                <span>Cortina de Voile</span>
                             </div>
                         </div>
                         <div class="main-card-first-small">
                             <div class="main-card-first-small-img">
-                                <img src="img/160x120.png" alt="mueble">
+                                <img src="img/cortina-home-3.webp" alt="cortinas dormitorios, cocina, living">
                             </div>
                             <div class="main-card-first-small-name">
-                                <span>Name</span>
+                                <span>Cortina de jacquard</span>
                             </div>
                         </div>
                     </div>
@@ -129,27 +168,27 @@
                     </div>
                     <div class="main-card-first-img-medium">
                         <div class="main-card-first-img">
-                            <img src="img/350x209.png" alt="" srcset="">
+                            <img src="img/cortinas_de_tela_1_medium.jpeg" alt="Sollones para liven, salas">
                         </div>
                         <div class="main-card-first-name">
-                            <span>Name</span>
+                            <span>Sillon de estilo</span>
                         </div>
                     </div>
                     <div class="main-card-first-small-container">
                         <div class="main-card-first-small">
                             <div class="main-card-first-small-img">
-                                <img src="img/160x120.png" alt="mueble">
+                                <img src="img/mueble-home-1.webp" alt="Sollones para liven, salas">
                             </div>
                             <div class="main-card-first-small-name">
-                                <span>Name</span>
+                                <span>Sillon de tela</span>
                             </div>
                         </div>
                         <div class="main-card-first-small">
                             <div class="main-card-first-small-img">
-                                <img src="img/160x120.png" alt="mueble">
+                                <img src="img/mueble-home-2.webp" alt="Sollones para liven, salas">
                             </div>
                             <div class="main-card-first-small-name">
-                                <span>Name</span>
+                                <span>Sillon de cuerina</span>
                             </div>
                         </div>
                     </div>
@@ -157,15 +196,38 @@
             </div>
         </section>
 
+
+
+
         <section class="main-sections-banner-second">
-            <div class="sections-banner-second">
-                <img src="img/800x250.png" alt="" srcset="">
+            <div class="sections-banner-second carousel slide" id="sections__banner__second--carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#sections__banner__second--carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#sections__banner__second--carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#sections__banner__second--carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/banner2-1.webp" class="d-block w-100" alt="Iluminacion de diseño e industrial">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/banner2-2.jpg" class="d-block w-100" alt="Muebles de estilo y diseño">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/banner2-3.webp" class="d-block w-100" alt="Objetos deco para todo uso">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#sections__banner__second--carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#sections__banner__second--carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
             </div>
         </section>
-
-
-
-
 
 
 
@@ -183,18 +245,18 @@
                         <div class="card-second-top">
                             <div class="main-card-second-small">
                                 <div class="card-second-small-img">
-                                    <img src="img/160x160.png" alt="" srcset="">
+                                    <img src="img/ilu-1.jpg" alt="" srcset="">
                                 </div>
                                 <div class="card-second-small-name">
-                                    <span>Name</span>
+                                    <span>Salas</span>
                                 </div>
                             </div>
                             <div class="main-card-second-small">
                                 <div class="card-second-small-img">
-                                    <img src="img/160x160.png" alt="" srcset="">
+                                    <img src="img/ilu-2.jpg" alt="" srcset="">
                                 </div>
                                 <div class="card-second-small-name">
-                                    <span>Name</span>
+                                    <span>Cocina</span>
                                 </div>
                             </div>
                         </div>
@@ -202,18 +264,18 @@
                         <div class="card-second-bottom">
                             <div class="main-card-second-small">
                                 <div class="card-second-small-img">
-                                    <img src="img/160x160.png" alt="" srcset="">
+                                    <img src="img/ilu-3.jpg" alt="" srcset="">
                                 </div>
                                 <div class="card-second-small-name">
-                                    <span>Name</span>
+                                    <span>Living</span>
                                 </div>
                             </div>
                             <div class="main-card-second-small">
                                 <div class="card-second-small-img">
-                                    <img src="img/160x160.png" alt="" srcset="">
+                                    <img src="img/ilu-4.jpg" alt="" srcset="">
                                 </div>
                                 <div class="card-second-small-name">
-                                    <span>Name</span>
+                                    <span>Dormitorios</span>
                                 </div>
                             </div>
                         </div>
@@ -231,18 +293,18 @@
                         <div class="card-second-top">
                             <div class="main-card-second-small">
                                 <div class="card-second-small-img">
-                                    <img src="img/160x160.png" alt="" srcset="">
+                                    <img src="img/obj-1.webp" alt="Centro Castaño">
                                 </div>
                                 <div class="card-second-small-name">
-                                    <span>Name</span>
+                                    <span>Centro Castaño</span>
                                 </div>
                             </div>
                             <div class="main-card-second-small">
                                 <div class="card-second-small-img">
-                                    <img src="img/160x160.png" alt="" srcset="">
+                                    <img src="img/obj-2.jpg" alt="Espejo Glow">
                                 </div>
                                 <div class="card-second-small-name">
-                                    <span>Name</span>
+                                    <span>Espejo Glow</span>
                                 </div>
                             </div>
                         </div>
@@ -250,18 +312,18 @@
                         <div class="card-second-bottom">
                             <div class="main-card-second-small">
                                 <div class="card-second-small-img">
-                                    <img src="img/160x160.png" alt="" srcset="">
+                                    <img src="img/obj-3.jpg" alt="Jarron Ambar">
                                 </div>
                                 <div class="card-second-small-name">
-                                    <span>Name</span>
+                                    <span>Jarron Ambar</span>
                                 </div>
                             </div>
                             <div class="main-card-second-small">
                                 <div class="card-second-small-img">
-                                    <img src="img/160x160.png" alt="" srcset="">
+                                    <img src="img/obj-4.jpg" alt="Posa vasos">
                                 </div>
                                 <div class="card-second-small-name">
-                                    <span>Name</span>
+                                    <span>Posavasos</span>
                                 </div>
                             </div>
                         </div>
@@ -279,18 +341,18 @@
                         <div class="card-second-top">
                             <div class="main-card-second-small">
                                 <div class="card-second-small-img">
-                                    <img src="img/160x160.png" alt="" srcset="">
+                                    <img src="img/out-1.jpeg" alt="Outlet decoracion de muebles antiguos">
                                 </div>
                                 <div class="card-second-small-name">
-                                    <span>Name</span>
+                                    <span>Muebles</span>
                                 </div>
                             </div>
                             <div class="main-card-second-small">
                                 <div class="card-second-small-img">
-                                    <img src="img/160x160.png" alt="" srcset="">
+                                    <img src="img/out-2.jpeg" alt="Outlet decoracion de muebles al natural">
                                 </div>
                                 <div class="card-second-small-name">
-                                    <span>Name</span>
+                                    <span>Objectos deco</span>
                                 </div>
                             </div>
                         </div>
@@ -298,18 +360,18 @@
                         <div class="card-second-bottom">
                             <div class="main-card-second-small">
                                 <div class="card-second-small-img">
-                                    <img src="img/160x160.png" alt="" srcset="">
+                                    <img src="img/out-3.jpeg" alt="Outlet decoracion iluminacion">
                                 </div>
                                 <div class="card-second-small-name">
-                                    <span>Name</span>
+                                    <span>Iluminacion</span>
                                 </div>
                             </div>
                             <div class="main-card-second-small">
                                 <div class="card-second-small-img">
-                                    <img src="img/160x160.png" alt="" srcset="">
+                                    <img src="img/out-4.jpeg" alt="Outlet decoracion de telas para tapiceria">
                                 </div>
                                 <div class="card-second-small-name">
-                                    <span>Name</span>
+                                    <span>Tapiceria</span>
                                 </div>
                             </div>
                         </div>

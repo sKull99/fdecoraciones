@@ -95,8 +95,11 @@
 @media (max-width: $default-with-limit-five) { 
     .main-container {
         margin-top: 0;
-        .main-sections-banner-first {}
+
+        .main-sections-banner-first { display: none; }
+
         .main-section-card-container-first {
+            margin-top: 30px;
             ._main-section-card-container-first {
                 gap: 70px;
                 display: flex;
@@ -112,7 +115,9 @@
                 }
             }
         }
-        .main-sections-banner-second {}
+
+        .main-sections-banner-second { display: none; }
+        
         .main-section-card-container-second {
             ._main-section-card-container-second {
                 gap: 70px;
