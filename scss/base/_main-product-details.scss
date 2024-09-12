@@ -131,7 +131,7 @@
                     width: 130px;
                     height: 130px;
                     img {
-                        @include object-fit-setting(70%, 100%, cover);
+                        @include object-fit-setting(90%, 100%, cover);
                     }
                 }
             }
