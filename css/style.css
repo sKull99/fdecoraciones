@@ -1557,5 +1557,13 @@ https://dev.to/fernandomoyano/sass-464d
     width: 450px;
   }
 }
+@media (max-width: 490px) {
+  .main-product-details-container .section-carousel-selector .section__carousel--container {
+    width: 300px;
+  }
+  .main-product-details-container .section-carousel-selector .section__carousel--container .section__carousel--item-list {
+    width: 300px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
