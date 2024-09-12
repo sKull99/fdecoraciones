@@ -179,6 +179,11 @@
         .section-carousel-selector {
             .section__carousel--container {
                 width: $default-product-details-width-carousel-movile-v2;
+
+                .section__carousel--btn-left,
+                .section__carousel--btn-right {
+                    display: none;
+                }
                 .section__carousel--item-list {
                     width: $default-product-details-width-carousel-movile-v2;
                     .glider-track {

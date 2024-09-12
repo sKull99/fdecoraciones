@@ -1561,6 +1561,10 @@ https://dev.to/fernandomoyano/sass-464d
   .main-product-details-container .section-carousel-selector .section__carousel--container {
     width: 300px;
   }
+  .main-product-details-container .section-carousel-selector .section__carousel--container .section__carousel--btn-left,
+  .main-product-details-container .section-carousel-selector .section__carousel--container .section__carousel--btn-right {
+    display: none;
+  }
   .main-product-details-container .section-carousel-selector .section__carousel--container .section__carousel--item-list {
     width: 300px;
   }
