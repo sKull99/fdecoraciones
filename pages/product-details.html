@@ -23,10 +23,12 @@
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0ee5b0efdf.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="body-product-details">
 
     <header class="header-container">
@@ -68,24 +70,27 @@
 
         <section class="section-product-details">
             <div class="section-product-details-container">
-                <div class="product-details-box-img-small">
-                    <div class="box-mini-img">
-                        <img src="../img/100x100.png" alt="" srcset="">
-                    </div>
-                    <div class="box-mini-img">
-                        <img src="../img/100x100.png" alt="" srcset="">
-                    </div>
-                    <div class="box-mini-img">
-                        <img src="../img/100x100.png" alt="" srcset="">
-                    </div>
-                    <div class="box-mini-img">
-                        <img src="../img/100x100.png" alt="" srcset="">
-                    </div>
-                </div>
 
-                <div class="product-details-box-img-medium">
-                    <div class="_product-details-box-img-medium">
-                        <img src="../img/400x500.png" alt="" srcset="">
+                <div class="product-details-img">
+                    <div class="product-details-box-img-small">
+                        <div class="box-mini-img">
+                            <img src="../img/100x100.png" alt="" srcset="">
+                        </div>
+                        <div class="box-mini-img">
+                            <img src="../img/100x100.png" alt="" srcset="">
+                        </div>
+                        <div class="box-mini-img">
+                            <img src="../img/100x100.png" alt="" srcset="">
+                        </div>
+                        <div class="box-mini-img">
+                            <img src="../img/100x100.png" alt="" srcset="">
+                        </div>
+                    </div>
+    
+                    <div class="product-details-box-img-medium">
+                        <div class="_product-details-box-img-medium">
+                            <img src="../img/400x500.png" alt="" srcset="">
+                        </div>
                     </div>
                 </div>
 
@@ -121,6 +126,57 @@
             </div>
         </section>
 
+        <article class="section-carousel-selector carousel">
+            <div class="section__carousel--container">
+                <button class="section__carousel--btn-left">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <div class="section__carousel--item-list">
+                    <div class="section__carousel--item">
+                        <img src="../img/130x130.png" alt="" srcset="">
+                    </div>
+                    <div class="section__carousel--item">
+                        <img src="../img/130x130.png" alt="" srcset="">                        
+                    </div>
+                    <div class="section__carousel--item">
+                        <img src="../img/130x130.png" alt="" srcset="">                        
+                    </div>
+                    <div class="section__carousel--item">
+                        <img src="../img/130x130.png" alt="" srcset="">                        
+                    </div>
+                    <div class="section__carousel--item">
+                        <img src="../img/130x130.png" alt="" srcset="">                        
+                    </div>
+                    <div class="section__carousel--item">
+                        <img src="../img/130x130.png" alt="" srcset="">                        
+                    </div>
+                    <div class="section__carousel--item">
+                        <img src="../img/130x130.png" alt="" srcset="">                        
+                    </div>
+                    <div class="section__carousel--item">
+                        <img src="../img/130x130.png" alt="" srcset="">                        
+                    </div>
+                    <div class="section__carousel--item">
+                        <img src="../img/130x130.png" alt="" srcset="">                        
+                    </div>
+                    <div class="section__carousel--item">
+                        <img src="../img/130x130.png" alt="" srcset="">                        
+                    </div>
+                    <div class="section__carousel--item">
+                        <img src="../img/130x130.png" alt="" srcset="">                        
+                    </div>
+                    <div class="section__carousel--item">
+                        <img src="../img/130x130.png" alt="" srcset="">                        
+                    </div>
+                </div>
+                <button class="section__carousel--btn-right">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+            <div role="tablist" class="section__carousel--dots"></div>
+        </article>
+
+        <!--
         <article class="section-carousel-selector">
             <i class="fa-solid fa-angle-left"></i>
             <div class="box-carrusel">
@@ -139,7 +195,12 @@
             </div>
             <i class="fa-solid fa-angle-right"></i>
         </article>
+        -->
     </main>
+
+
+
+
 
 
 
@@ -197,6 +258,7 @@
 </footer>
 
 <!-- Slider script -->
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 <script src="../js/slider.js"></script>
 </body>
 </html>

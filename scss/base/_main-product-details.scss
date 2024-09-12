@@ -12,13 +12,20 @@
         .section-product-details-container {
             display: grid;
             grid-gap: 15px;
-            grid-template-columns: 0.3fr 1fr 1.3fr;
+            grid-template-columns: 1fr 1fr;
 
-            .product-details-box-img-small {}
 
-            .product-details-box-img-medium {
-                ._product-details-box-img-medium {}
+            .product-details-img {
+                display: flex;
+                gap: 15px;
+                .product-details-box-img-small {}
+
+                .product-details-box-img-medium {
+                    ._product-details-box-img-medium {}
+                }
             }
+
+            
 
             .product-defails-box {
                 .box-title {
@@ -60,33 +67,64 @@
         }
     }
 
+    // https://www.youtube.com/watch?v=uDqW8bCFhps carrusel con imagenes chicas
     .section-carousel-selector {
+        //background-color: lightsalmon;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        i {
-            height: 46px;
-            width: 46px;
-            font-size: 1.2rem;
+        
+        .section__carousel--container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            line-height: 46px;
-            cursor: pointer;
-            border-radius: 50%;
-            background-color: #EBEBEB;
-        }
-        .box-carrusel {
-            padding: 0 10px;
-            border: 1px solid;
-            max-width: 762px;
-            white-space: nowrap;
-            cursor: pointer;
-            overflow: hidden;
-            img {
-                height: 130px;
-                object-fit: cover;
+                        
+            width: $default-product-details-width-carousel;
+            //gap: 4px;
+
+            position: relative;
+
+            button {
+                position: absolute;
+                display: block;
+                width: 30px;
+	            height: 30px;
+	            border: none;
+	            top: calc(50% - 35px);
+	            cursor: pointer;
+	            line-height: 30px;
+	            text-align: center;
+	            background: none;
+	            color: #474242;
+	            opacity: 20%;
+            }
+
+            button:hover {
+                opacity: 100%;
+            }
+            .section__carousel--btn-left {
+                left: -20px;
+            }
+            .section__carousel--btn-right {
+                right: -20px;
+            }
+
+            .section__carousel--item-list {
+                display: flex;
+                width: $default-product-details-width-carousel;
+                
+
+                .glider-track {
+                    width: $default-product-details-width-carousel;
+                }
+
+                .section__carousel--item {
+                    width: 32px;
+                }
             }
         }
-
     }
 }

@@ -2,6 +2,31 @@
 @import "../base/vars";
 
 
+
+@media (max-width: $default-with-limit-two) { 
+    .main-product-details-container {
+        .section-carousel-events {}
+
+        .section-product-details {
+            .section-product-details-container {
+                display: flex;
+                gap: 60px;
+                flex-direction: column;
+                .product-details-img {
+                    .product-details-box-img-small {}
+    
+                    .product-details-box-img-medium {
+                        ._product-details-box-img-medium {}
+                    }
+                }
+
+                .product-defails-box {}
+            }
+        }
+    }
+
+}
+
 @media (max-width: $default-with-limit-four) { 
     .main-product-details-container {
         .section-carousel-events {}
@@ -18,7 +43,6 @@
                 }
     
                 .product-defails-box {
-                    margin-top: 30px;
                     .box-title {}
     
                     .box-price {
@@ -36,54 +60,17 @@
     
             }
         }
-    
+
         .section-carousel-selector {
-            .box-carrusel {
-                max-width: 500px;
-            }
-        }
-    }
-}
 
-
-
-
-
-@media (max-width: $default-with-limit-five) { 
-    .main-product-details-container {
-        .section-carousel-events {}
-    
-        .section-product-details {
-            .section-product-details-container {
-
-                .product-details-box-img-small {}
-    
-                .product-details-box-img-medium {
-                    ._product-details-box-img-medium {}
-                }
-    
-                .product-defails-box {
-                    .box-title {}
-    
-                    .box-price {
-                        span {}
+            .section__carousel--container {
+                .section__carousel--item-list {
+                    .glider-track {
                     }
-    
-                    .box-size {
-                        span {}
+                    .glider-slide {
+                       width: 150px !important;
                     }
-    
-                    .box-details { }
-    
-                    .box-about { }
                 }
-    
-            }
-        }
-    
-        .section-carousel-selector {
-            .box-carrusel {
-                max-width: 300px;
             }
         }
     }
@@ -96,17 +83,29 @@
         .section-product-details {
             .section-product-details-container {
 
-                .product-details-box-img-small {
-                    .box-mini-img {
-                        img:last-child {
-                            display: none;
+                .product-details-img {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .product-details-box-img-small {
+                        display: flex;
+                        gap: 10px;
+                        flex-direction: row;
+                        
+                        .box-mini-img {
+                            img:last-child {
+                                //display: none;
+                            }
                         }
                     }
+        
+                    .product-details-box-img-medium {
+                        ._product-details-box-img-medium {}
+                    }
                 }
-    
-                .product-details-box-img-medium {
-                    ._product-details-box-img-medium {}
-                }
+
+                
     
                 .product-defails-box {
                     .box-title {}
@@ -126,10 +125,18 @@
     
             }
         }
-    
+
         .section-carousel-selector {
-            .box-carrusel {
-                max-width: 150px;
+            .section__carousel--container {
+                width: $default-product-details-width-carousel-movile;
+                .section__carousel--item-list {
+                    width: $default-product-details-width-carousel-movile;
+                    .glider-track {
+                        //width: $default-product-details-width-carousel-movile;
+                    }
+                    .glider-slide {
+                    }
+                }
             }
         }
     }
