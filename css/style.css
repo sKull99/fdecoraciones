@@ -949,6 +949,11 @@ https://dev.to/fernandomoyano/sass-464d
   display: flex;
   gap: 15px;
 }
+.main-product-details-container .section-product-details .section-product-details-container .product-details-img .product-details-box-img-medium ._product-details-box-img-medium img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+}
 .main-product-details-container .section-product-details .section-product-details-container .product-defails-box .box-title h2 {
   margin-bottom: 0;
   font-size: 1.5em;
@@ -1039,7 +1044,13 @@ https://dev.to/fernandomoyano/sass-464d
   width: 600px;
 }
 .main-product-details-container .section-carousel-selector .section__carousel--container .section__carousel--item-list .section__carousel--item {
-  width: 32px;
+  width: 130px;
+  height: 130px;
+}
+.main-product-details-container .section-carousel-selector .section__carousel--container .section__carousel--item-list .section__carousel--item img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Layout */
@@ -1547,7 +1558,7 @@ https://dev.to/fernandomoyano/sass-464d
   }
   .main-product-details-container .section-product-details .section-product-details-container .product-details-img .product-details-box-img-small {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-direction: row;
   }
   .main-product-details-container .section-carousel-selector .section__carousel--container {
