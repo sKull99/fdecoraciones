@@ -1,9 +1,5 @@
 /* Layout */
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -40,10 +36,6 @@ https://dev.to/fernandomoyano/sass-464d
   }
 }
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -83,10 +75,6 @@ https://dev.to/fernandomoyano/sass-464d
   }
 }
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -138,10 +126,6 @@ https://dev.to/fernandomoyano/sass-464d
   }
 }
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -186,10 +170,6 @@ https://dev.to/fernandomoyano/sass-464d
   align-items: center;
 }
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -226,10 +206,6 @@ https://dev.to/fernandomoyano/sass-464d
   }
 }
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -266,10 +242,6 @@ https://dev.to/fernandomoyano/sass-464d
   }
 }
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -328,10 +300,6 @@ https://dev.to/fernandomoyano/sass-464d
   grid-area: section-carousel-selector;
 }
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -362,10 +330,6 @@ https://dev.to/fernandomoyano/sass-464d
 }
 
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -493,10 +457,6 @@ https://dev.to/fernandomoyano/sass-464d
 }
 
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -696,10 +656,6 @@ https://dev.to/fernandomoyano/sass-464d
 }
 
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -792,10 +748,6 @@ https://dev.to/fernandomoyano/sass-464d
 }
 
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -908,10 +860,6 @@ https://dev.to/fernandomoyano/sass-464d
 }
 
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -1057,10 +1005,6 @@ https://dev.to/fernandomoyano/sass-464d
 }
 
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -1189,12 +1133,82 @@ https://dev.to/fernandomoyano/sass-464d
   height: 100%;
   object-fit: cover;
 }
+/* Layout */
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+@keyframes textAnimation {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  30% {
+    width: 50%;
+    height: 0;
+  }
+  60% {
+    width: 59vw;
+    height: 12vw;
+  }
+  80% {
+    width: 59vw;
+    height: 12vw;
+  }
+  100% {
+    width: 59vw;
+    height: 12vw;
+  }
+}
+.main__container--account .main__account--cointainer {
+  text-align: center;
+}
+.main__container--account .main__account--cointainer h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+.main__container--account .main__account--cointainer .main__account--boxes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__container--account .main__account--cointainer .main__account--boxes .main__account--box {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 380;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+
 /* MediaQuery */
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -1217,10 +1231,6 @@ https://dev.to/fernandomoyano/sass-464d
 /* Products page */
 /* Product details */
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -1333,10 +1343,6 @@ https://dev.to/fernandomoyano/sass-464d
   }
 }
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -1424,10 +1430,6 @@ https://dev.to/fernandomoyano/sass-464d
   }
 }
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -1485,10 +1487,6 @@ https://dev.to/fernandomoyano/sass-464d
   }
 }
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -1529,10 +1527,6 @@ https://dev.to/fernandomoyano/sass-464d
   }
 }
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */
@@ -1603,10 +1597,6 @@ https://dev.to/fernandomoyano/sass-464d
   }
 }
 /* Layout */
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
 /* default  */
 /* Body */
 /* Header */

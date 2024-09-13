@@ -73,9 +73,7 @@
         }
     }
 
-    // https://www.youtube.com/watch?v=uDqW8bCFhps carrusel con imagenes chicas
     .section-carousel-selector {
-        //background-color: lightsalmon;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -89,8 +87,6 @@
             text-align: center;
                         
             width: $default-product-details-width-carousel;
-            //gap: 4px;
-
             position: relative;
 
             button {
@@ -121,8 +117,6 @@
             .section__carousel--item-list {
                 display: flex;
                 width: $default-product-details-width-carousel;
-                
-
                 .glider-track {
                     width: $default-product-details-width-carousel;
                 }
