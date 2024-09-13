@@ -44,7 +44,11 @@
                 padding: 10px;
                 border: 1px solid;
                 border-radius: 5px;
+                cursor: pointer;
                 @include font-setting($default-card-span-font-weight, $default-card-span-font-size);
+            }
+            .main__account--box:hover {
+                color: rgb(133, 91, 36);
             }
         }
     }
