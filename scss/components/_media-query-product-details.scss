@@ -19,7 +19,6 @@
                         ._product-details-box-img-medium {}
                     }
                 }
-
                 .product-defails-box {}
             }
         }
@@ -53,11 +52,9 @@
                         span {}
                     }
     
-                    .box-details { }
-    
-                    .box-about { }
+                    .box-details {}
+                    .box-about {}
                 }
-    
             }
         }
 
@@ -104,8 +101,6 @@
                         ._product-details-box-img-medium {}
                     }
                 }
-
-                
     
                 .product-defails-box {
                     .box-title {}
@@ -118,11 +113,9 @@
                         span {}
                     }
     
-                    .box-details { }
-    
-                    .box-about { }
+                    .box-details {}
+                    .box-about {}
                 }
-    
             }
         }
 
@@ -131,10 +124,8 @@
                 width: $default-product-details-width-carousel-movile;
                 .section__carousel--item-list {
                     width: $default-product-details-width-carousel-movile;
-                    .glider-track {
-                    }
-                    .glider-slide {
-                    }
+                    .glider-track {}
+                    .glider-slide {}
                 }
             }
         }
@@ -168,10 +159,9 @@
                     .box-size {
                         span {}
                     }
-                    .box-details { }
-                    .box-about { }
+                    .box-details {}
+                    .box-about {}
                 }
-    
             }
         }
 
@@ -185,11 +175,8 @@
                 }
                 .section__carousel--item-list {
                     width: $default-product-details-width-carousel-movile-v2;
-                    .glider-track {
-                        //width: $default-product-details-width-carousel-movile;
-                    }
-                    .glider-slide {
-                    }
+                    .glider-track {}
+                    .glider-slide {}
                 }
             }
         }

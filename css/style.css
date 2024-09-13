@@ -1080,10 +1080,25 @@ https://dev.to/fernandomoyano/sass-464d
 /* Products page */
 /* Product details */
 /* Default Grid */
+@keyframes bg-animaton {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .main__container__register {
+  grid-area: main;
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-image: linear-gradient(135deg, #407e88, #505488, #586bb8, #696896, #5a4894, #335f9d, #478074);
+  background-size: 500%;
+  animation: bg-animaton 10s infinite;
 }
 .main__container__register .section-carousel-events {
   background-color: #EBEBEB;
@@ -1092,6 +1107,7 @@ https://dev.to/fernandomoyano/sass-464d
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -1105,6 +1121,9 @@ https://dev.to/fernandomoyano/sass-464d
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.main__container__register .main__container__register--general .section__register .section__register--form h1 {
+  color: #EBEBEB;
 }
 .main__container__register .main__container__register--general .section__register .section__register--form .section__register--form--social {
   display: flex;
@@ -1124,8 +1143,12 @@ https://dev.to/fernandomoyano/sass-464d
   margin-bottom: 10px;
   justify-content: space-between;
 }
+.main__container__register .main__container__register--general .section__register .section__register--form .seccion__register--from--subtitle span {
+  color: #EBEBEB;
+}
 .main__container__register .main__container__register--general .section__register .section__register--form .seccion__register--from--subtitle hr {
   width: 60px;
+  color: white;
 }
 .main__container__register .main__container__register--general .section__register .section__register--form form {
   display: flex;
@@ -1152,26 +1175,17 @@ https://dev.to/fernandomoyano/sass-464d
   border-radius: 3px;
   width: 40%;
 }
-.main__container__register .main__container__register--general .section__register--carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main__container__register .main__container__register--general .main-sections-banner-first .sections-banner-first {
+  height: 300px;
 }
-.main__container__register .main__container__register--general .section__register--carousel i {
-  height: 46px;
-  width: 46px;
-  font-size: 1.2rem;
-  text-align: center;
-  line-height: 46px;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: #EBEBEB;
+.main__container__register .main__container__register--general .main-sections-banner-first .sections-banner-first .carousel-inner {
+  height: 300px;
 }
-.main__container__register .main__container__register--general .section__register--carousel .section__register--carousel--img img {
-  height: 150px;
+.main__container__register .main__container__register--general .main-sections-banner-first .sections-banner-first .carousel-inner img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-
 /* MediaQuery */
 /* Layout */
 /* 
@@ -1578,6 +1592,43 @@ https://dev.to/fernandomoyano/sass-464d
   }
   .main-product-details-container .section-carousel-selector .section__carousel--container .section__carousel--item-list {
     width: 300px;
+  }
+}
+/* Layout */
+/* 
+De aqui saque la estructura que me parece mucho mejor
+https://dev.to/fernandomoyano/sass-464d
+*/
+/* default  */
+/* Body */
+/* Header */
+/* Main */
+/* main-sections-banner-first */
+/* Cards */
+/* main-section-card-container-first */
+/* main-sections-banner-second */
+/* main-section-cards-second */
+/* Footer */
+/* _footer-container */
+/* footer-content-sections */
+/* footer-content-section-card */
+/* footer-section-card-links */
+/* footer-section-card-images */
+/* footer-content-copyright */
+/* MediaQuery */
+/* Main */
+/* Header */
+/* Products page */
+/* Product details */
+/* Default Grid */
+@media (max-width: 768px) {
+  .main__container__register .main__container__register--general .main-sections-banner-first {
+    display: none;
+  }
+}
+@media (max-width: 608px) {
+  .main__container__register .main__container__register--general {
+    width: 100%;
   }
 }
 
