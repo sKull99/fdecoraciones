@@ -87,6 +87,8 @@
                 grid-template-rows: $header-content-bottom-ul-grid-template-rows;
                 grid-template-columns: repeat(5, 1fr);
 
+                .header-menu-hidden { display: none; }
+
                 li {
                     a {
                         color: $header-content-bottom-link-font-color;

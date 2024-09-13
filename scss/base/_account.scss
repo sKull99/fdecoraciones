@@ -1,0 +1,51 @@
+@import "./vars";
+@import "../components/mixins";
+
+
+@keyframes textAnimation {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    30% {
+        width: 50%;
+        height: 0;
+    }
+    60% {
+        width: 59vw;
+        height: 12vw;
+    }
+    80% {
+        width: 59vw;
+        height: 12vw;
+    }
+    100% {
+        width: 59vw;
+        height: 12vw;
+    }
+    
+}
+
+.main__container--account {
+    .main__account--cointainer {
+        text-align: center;
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            @include font-setting($default-card-title-font-weight, $default-card-title-font-size);
+        }
+        .main__account--boxes {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .main__account--box {
+                padding: 10px;
+                border: 1px solid;
+                border-radius: 5px;
+                @include font-setting($default-card-span-font-weight, $default-card-span-font-size);
+            }
+        }
+    }
+}

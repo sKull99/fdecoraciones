@@ -1,11 +1,5 @@
 /* Layout */
 
-/* 
-De aqui saque la estructura que me parece mucho mejor
-https://dev.to/fernandomoyano/sass-464d
-*/
-
-
 /* default  */
 
 $default-width-percent: 100%;
@@ -150,6 +144,7 @@ $default-with-limit-three: 1056px;
 $default-with-limit-four: 768px;
 $default-with-limit-five: 707px;
 $default-with-limit-six: 608px;
+$default-with-limit-seven: 490px;
 
 
 
@@ -208,3 +203,7 @@ $default-product-details-map: (
     product-details-selector: $default-product-details-selector,
     product-details-gap: $default-product-details-gap,
 );
+
+$default-product-details-width-carousel: 600px;
+$default-product-details-width-carousel-movile: 450px;
+$default-product-details-width-carousel-movile-v2: 300px;

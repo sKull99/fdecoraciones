@@ -2,10 +2,24 @@
 @import "../components/mixins";
 
 
+@keyframes bg-animaton {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%;}
+}
+
 .main__container__register {
+    grid-area: main;
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    background-image: linear-gradient(135deg
+    ,#407e88, #505488, #586bb8, #696896
+    ,#5a4894, #335f9d, #478074);
+    background-size: 500%;
+    animation: bg-animaton 10s infinite;
+    
     
     .section-carousel-events {
         background-color: #EBEBEB;
@@ -15,6 +29,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 50%;
         margin-top: 60px;
         margin-bottom: 60px;
         .section__register {
@@ -28,6 +43,8 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                h1 { color: $header-content-bottom-link-font-color; }
                 .section__register--form--social {
                     display: flex;
                     gap: 5px;
@@ -46,13 +63,10 @@
                     margin-bottom: 10px;
                     justify-content: space-between;              
                     
-                    span {
-                        //position: absolute;
-                    }
+                    span {color: $header-content-bottom-link-font-color;}
                     hr {
                         width: 60px;
-                        //position: relative;
-                        //z-index: 1;
+                        color: white;
                     }
                 }
                 form {
@@ -86,27 +100,21 @@
             
         }
 
-        .section__register--carousel {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            i {
-                height: 46px;
-                width: 46px;
-                font-size: 1.2rem;
-                text-align: center;
-                line-height: 46px;
-                cursor: pointer;
-                border-radius: 50%;
-                background-color: #EBEBEB;
-            }
-            .section__register--carousel--img {
-                img {
-                    height: 150px;
-                    object-fit: cover;
+        .main-sections-banner-first {
+            .sections-banner-first {
+                height: 300px;
+                .carousel-indicators {
+                    
                 }
+                .carousel-inner {
+                    height: 300px;
+                    img {
+                        @include object-fit-setting(100%, 100%, cover);
+                    }
+                }
+                .carousel-control-prev {}
+                .carousel-control-next {}
             }
-
         }
     }
 }

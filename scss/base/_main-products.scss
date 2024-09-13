@@ -3,18 +3,14 @@
 
 
 .main-products-container {
-    grid-area: main;
-    margin-top: 20px;
-    margin-bottom: 70px;
 
     .main-sections-banner-first {
         display: flex;
         justify-content: center;
+        width: $default-width-percent;
         .sections-banner-first {
-            width: 83%;
+            width: $sections-banner-first-width-percent;;
             height: 300px;
-
-            
             .carousel-indicators {
 
             }

@@ -1,0 +1,61 @@
+@import "../base/vars";
+@import "../components/mixins";
+
+@media (max-width: $default-with-limit-four) {
+    .main__container__register {       
+        .section-carousel-events {}
+        
+        .main__container__register--general {
+            .section__register {
+                .section__register--form {
+                    .section__register--form--social {
+                        button {}
+                    }
+                    .seccion__register--from--subtitle {
+                        span {}
+                        hr {}
+                    }
+                    form {
+                        .inputContainer {
+                            input {}           
+                        }
+                        .submitBtn {}
+                    }
+                }
+            }
+    
+            .main-sections-banner-first {
+                display: none;
+                .sections-banner-first {
+                    .carousel-indicators {}
+                    .carousel-inner {
+                        img {}
+                    }
+                    .carousel-control-prev {}
+                    .carousel-control-next {}
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $default-with-limit-six) {
+    .main__container__register {       
+        .section-carousel-events {}
+        
+        .main__container__register--general {
+            width: 100%;
+        }
+    }
+}
+
+
+//@media (max-width: $default-with-limit-seven) {
+//    .main__container__register {       
+//        .section-carousel-events {}
+//        
+//        .main__container__register--general {
+//            width: 100%;
+//        }
+//    }
+//}

@@ -9,6 +9,6 @@
 
   @media (max-width: $default-with-limit-four) { 
     .body-product-details {
-      display: block;
+      @include body-layout($body-layout-type, $mobile-body-layout-map);
     }
   }

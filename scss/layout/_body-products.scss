@@ -8,7 +8,9 @@
 
 
 @media (max-width: $default-with-limit-four) {
-  .body-product-container { }
+  .body-product-container {
+    @include body-layout($body-layout-type, $mobile-body-layout-map);
+   }
  }
 
 @media (max-width: $default-with-limit-five) {
