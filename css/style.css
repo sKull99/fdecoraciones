@@ -1200,11 +1200,16 @@
   padding: 10px;
   border: 1px solid;
   border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
   font-size: 1em;
   font-style: normal;
   font-weight: 380;
   font-family: "Roboto Slab", serif;
   font-optical-sizing: auto;
+}
+.main__container--account .main__account--cointainer .main__account--boxes .main__account--box:hover {
+  color: rgb(133, 91, 36);
 }
 
 /* MediaQuery */
