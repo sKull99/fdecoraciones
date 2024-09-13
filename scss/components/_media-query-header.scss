@@ -72,3 +72,30 @@
         }
     }
 }
+
+
+@media (max-width: $default-with-limit-five) {
+    .header-container {
+        .header-content {
+            .header-content-up {
+                .header-content-up-logo {}
+                .header-content-up-search {}
+                .header-content-up-register {}
+            }
+
+            .header-content-bottom {
+                #check {}
+                .checkbtn {
+                    .menu-icon {}
+                }
+                #check:checked ~ ul {}
+
+                ul {
+                    .header-menu-hidden { display: list-item; }
+                    li {}
+                    li:last-child {}
+                }
+            }
+        }
+    }
+}

@@ -471,6 +471,9 @@ https://dev.to/fernandomoyano/sass-464d
   grid-template-rows: 30px;
   grid-template-columns: repeat(5, 1fr);
 }
+.header-container .header-content .header-content-bottom ul .header-menu-hidden {
+  display: none;
+}
 .header-container .header-content .header-content-bottom ul li a {
   color: #EBEBEB;
   text-decoration: none;
@@ -1413,6 +1416,11 @@ https://dev.to/fernandomoyano/sass-464d
   .header-container .header-content .header-content-bottom ul li:last-child {
     background: none;
     padding: 1rem;
+  }
+}
+@media (max-width: 707px) {
+  .header-container .header-content .header-content-bottom ul .header-menu-hidden {
+    display: list-item;
   }
 }
 /* Layout */
